@@ -1,0 +1,63 @@
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #ff9cca;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hearts-container {
+  display: grid;
+  grid-template-columns: repeat(5, 120px);
+  gap: 3rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.heart.locked {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -25px;
+  left: 0;
+}
+
+.heart::after {
+  left: 25px;
+  top: 0;
+}️
+
+
+#message-box {
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  min-height: 4rem;
+}
